@@ -1,0 +1,134 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Cinza claro */
+  color: #212529; /* Preto */
+  transition: all 0.3s ease;
+}
+
+header {
+  background-color: #343a40; /* Cinza escuro */
+  color: #ffffff; /* Branco */
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #dee2e6; /* Cinza claro */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff; /* Branco */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f8485e; /* Rosa */
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: #ffffff; /* Branco */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+button {
+  background-color: #dc3545; /* Vermelho */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #c82333; /* Vermelho mais escuro */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #343a40; /* Cinza escuro */
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+footer:hover {
+  background-color: #23272b; /* Cinza mais escuro */
+}
+
+.ursinho {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Para garantir que fique acima de outros elementos */
+  animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translate(-50%, -50%) translateY(0); }
+  to { transform: translate(-50%, -50%) translateY(-20px); }
+}
+
+/* Estilo para as fotos */
+#fotos-especial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fotos-especial img {
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin: 10px; /* Espaçamento entre as fotos */
+}
+
+#musicas-especial {
+  display: none;
+  text-align: center;
+}
+
+#musicas-especial img,
+#musicas-especial audio {
+  display: block;
+  margin: 0 auto;
+}
+
+#musicas-especial img {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%; /* Defina a largura máxima desejada */
+}

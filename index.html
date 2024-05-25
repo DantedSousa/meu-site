@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aniversário da Princesa</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <audio id="background-music" src="Shawn Mendes ‒ There's Nothing Holding Me Back (Lyrics).mp3" controls autoplay loop></audio>
+
+  <div class="ursinho">
+    <img src="ursinho.gif" alt="Ursinho" />
+  </div>
+  
+  <header>
+    <h1>Feliz aniversário, minha luz.&#128141;</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="mostrarAba('textos')">Encantamentos</a></li>
+        <li><a href="#" onclick="mostrarAba('fotos')">Luzes Aladas</a></li>
+        <li><a href="#" onclick="mostrarAba('musicas')">Canção Mística</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="textos" style="display:none;">
+      <h2>Teste Encantado.<span>&#128218;</span><span>&#10024;</span></h2>
+      <h3>-Passe no teste para ter acesso aos seus encantamentos:</h3>
+      <label for="pergunta1">1. Qual seu nome de Elfa?</label><br>
+      <input type="text" id="pergunta1" name="pergunta1"><br><br>
+      <label for="pergunta2">2. Qual o nome da sua fera?</label><br>
+      <input type="text" id="pergunta2" name="pergunta2"><br><br>
+      <button onclick="verificarRespostasTextos()">Verificar Respostas</button>
+      <p id="resultadoTextos"></p>
+    </section>
+
+    <section id="textos-especial" style="display:none;">
+      <h2>Encantamentos Especiais!</h2>
+      <p>Meu amor, desde que você entrou na minha vida, tudo se transformou em uma aventura emocionante. Cada dia ao seu lado é uma descoberta, uma oportunidade de aprender e crescer. Sua presença ilumina meu mundo e me faz querer ser uma pessoa melhor. Te amo mais do que tudo nesse mundo, minha eterna companheira de jornada.<span>&#127799;</span></p>
+      <p>Seu sorriso é a luz que ilumina meus dias mais sombrios. Cada vez que você sorri, sinto como se o mundo inteiro se enchesse de cores, como se a felicidade fosse a única realidade. Seu sorriso é meu porto seguro, meu refúgio contra as adversidades da vida.<span>&#11088;</span></p>
+      <p>Seu abraço é meu lugar favorito no mundo. Nele, encontro conforto, proteção e amor. Cada vez que você me abraça, sinto-me em casa, como se nada mais importasse além desse momento de ternura e carinho. Você é minha âncora, minha segurança.<span>&#10084;&#65039;</span></p>
+      <p>Seu amor é como um farol, guiando-me em meio à escuridão. Mesmo nos momentos mais difíceis, sei que posso contar com você para me iluminar o caminho. Seu amor é meu porto seguro, minha certeza em um mundo cheio de incertezas.<span>&#127756;</span></p>
+      <p>Seu jeito doce e carinhoso me encanta a cada dia. Sua bondade e generosidade são exemplos para todos ao seu redor. Você é a pessoa mais incrível que já conheci, e sou eternamente grato por tê-la em minha vida.<span>&#10024;</span></p>
+      <p>Seu riso é a música mais linda que já ouvi. Cada vez que você ri, meu coração se enche de alegria, e todos os meus problemas parecem desaparecer. Seu riso é minha melodia favorita, minha canção de amor.<span>&#127773;</span></p>
+      <p>Seu cheiro é como um perfume suave, que me envolve e me atrai. Cada vez que respiro fundo, sinto-me mais perto de você, mais conectado. Seu cheiro é minha droga favorita, meu vício mais doce. Te amo além da vida.<span>&#127747;</span></p>
+      <p>Seus gestos de carinho e amor são como pequenos milagres que iluminam minha vida. Cada vez que você me toca, sinto-me amado, valorizado. Seu amor é meu maior tesouro, minha razão de viver. Te amo mais do que a própria vida.<span>&#128141;</span></p>
+      <p>Seu corpo é como uma obra de arte, esculpida com perfeição. Cada curva, cada detalhe, é uma ode à beleza feminina. Você é a própria musa da beleza, minha deusa da sedução. Te desejo mais do que tudo nesse mundo.<span>&#10084;&#65039;</span></p>
+      <p>Seu amor é como uma estrela, brilhando no céu da minha vida. Cada vez que você me ama, sinto-me mais feliz, mais completo. Seu amor é minha estrela guia, minha luz no fim do túnel. Te amo mais do que as palavras podem dizer.<span>&#10024;</span></p>
+      <p><h2>Autor: Carlinhoos!</h2> </p>
+    </section>
+    <section id="fotos" style="display:none;">
+      <h2>Prova Luz.<span>&#128220;</span><span>&#10024;</span></h2>
+      <h3>-Passe na prova para enfeitiçar seu primeiro humano:</h3>
+      <label for="pergunta3">1. Complete: Eu te amo ... ....</label><br>
+      <input type="foto" id="pergunta3" name="pergunta3"><br><br>
+      <label for="pergunta4">2. Qual parte do seu corpo não retorna a forma humana?</label><br>
+      <input type="foto" id="pergunta4" name="pergunta4"><br><br>
+      <button onclick="verificarRespostasFotos()">Verificar Respostas</button>
+      <p id="resultadoFotos"></p>
+    </section>
+
+    <section id="fotos-especial" style="display:none;">
+      <!-- Inserir fotos aqui -->
+        <h2>Olha, você lançou um feitiço nesse garoto e fez dele o seu Guardião!</h2>
+        <div class="foto-legenda">
+          <img src="IMG-20240319-WA0096.jpg" alt="foto1">
+          <p>Essa eu dedico para o amor da minha vida...</p>
+        </div>
+        <div class="foto-legenda">
+          <img src="IMG-20240319-WA0094.jpg" alt="foto2">
+          <p>Que sempre esteve comigo nos meus piores e melhores dias...</p>
+        </div>
+      <div>
+        <figure style="display: inline-block; margin: 10px;">
+          <img src="IMG-20240319-WA0076.jpg" alt="foto3" style="width: 200px;">
+          <figcaption>Que cuidou de mim...</figcaption>
+        </figure>
+        <figure style="display: inline-block; margin: 10px;">
+          <img src="IMG-20240319-WA0078.jpg" alt="foto4" style="width: 200px;">
+          <figcaption>Com muito amor e carinho...</figcaption>
+        </figure>
+      </div>
+        <div class="foto-legenda">
+          <img src="IMG-20240319-WA0075.jpg" alt="foto5">
+          <p>De uma maneira que fez eu me sentir unico...</p>
+        <div>
+            <figure style="display: inline-block; margin: 10px;">
+              <img src="IMG-20240319-WA0087.jpg" alt="foto6" style="width: 200px;">
+              <figcaption>Em Cada Beijo....</figcaption>
+          </figure>
+          <figure style="display: inline-block; margin: 10px;">
+              <img src="IMG-20240319-WA0097.jpg" alt="foto7" style="width: 200px;">
+              <figcaption>&#x2764;&#xFE0F;
+              </figcaption>
+          </figure>
+          <figure style="display: inline-block; margin: 10px;">
+            <img src="IMG-20240319-WA0104.jpg" alt="foto8" style="width: 200px;">
+            <figcaption>&#x2764;&#xFE0F;
+            </figcaption>
+        </figure>
+        </div>
+        <div class="foto-legenda">
+          <img src="IMG-20240319-WA0090.jpg" alt="foto9">
+          <p>Muito antes desse momento...</p>
+        </div>
+        <div class="foto-legenda">
+          <img src="IMG-20240319-WA0102.jpg" alt="foto10">
+          <p>Eu já sabia que seria feliz ao seu lado...</p>
+        </div>
+        <div>
+          <figure style="display: inline-block; margin: 10px;">
+            <img src="IMG-20240319-WA0082.jpg" alt="foto11" style="width: 200px;">
+            <figcaption>Sou grato pelas risadas...</figcaption>
+        </figure>
+        <figure style="display: inline-block; margin: 10px;">
+            <img src="IMG-20240319-WA0084.jpg" alt="foto12" style="width: 200px;">
+            <figcaption>&#x2764;&#xFE0F;
+            </figcaption>
+        </figure>
+        <figure style="display: inline-block; margin: 10px;">
+          <img src="IMG-20240319-WA0088.jpg" alt="foto13" style="width: 200px;">
+          <figcaption>&#x2764;&#xFE0F;
+          </figcaption>
+      </figure>
+      <figure style="display: inline-block; margin: 10px;">
+        <img src="IMG-20240319-WA0099.jpg" alt="foto14" style="width: 200px;">
+        <figcaption>&#x2764;&#xFE0F;
+        </figcaption>
+    </figure>
+      </div>
+      <div>
+        <figure style="display: inline-block; margin: 10px;">
+          <img src="IMG-20240319-WA0066.jpg" alt="foto15" style="width: 200px;">
+          <figcaption>Sou grato por cada momento que passamos juntos...</figcaption>
+      </figure>
+      <figure style="display: inline-block; margin: 10px;">
+          <img src="IMG-20240319-WA0077.jpg" alt="foto16" style="width: 200px;">
+          <figcaption>&#x2764;&#xFE0F;
+          </figcaption>
+      </figure>
+      <figure style="display: inline-block; margin: 10px;">
+        <img src="IMG-20240319-WA0079.jpg" alt="foto17" style="width: 200px;">
+        <figcaption>&#x2764;&#xFE0F;
+        </figcaption>
+    </figure>
+    <figure style="display: inline-block; margin: 10px;">
+      <img src="IMG-20240319-WA0081.jpg" alt="foto18" style="width: 200px;">
+      <figcaption>&#x2764;&#xFE0F;
+      </figcaption>
+  </figure>
+  <figure style="display: inline-block; margin: 10px;">
+    <img src="IMG-20240319-WA0101.jpg" alt="foto19" style="width: 200px;">
+    <figcaption>&#x2764;&#xFE0F;
+    </figcaption>
+</figure>
+</div>
+  <div>
+    <figure style="display: inline-block; margin: 10px;">
+      <img src="IMG-20240319-WA0072.jpg" alt="foto20" style="width: 200px;">
+      <figcaption>Sou grato pelo seu companherismo...</figcaption>
+  </figure>
+  <figure style="display: inline-block; margin: 10px;">
+      <img src="IMG-20240319-WA0080.jpg" alt="foto21" style="width: 200px;">
+      <figcaption>&#x2764;&#xFE0F;</figcaption>
+  </figure>
+  <figure style="display: inline-block; margin: 10px;">
+    <img src="IMG-20240319-WA0091.jpg" alt="foto23" style="width: 200px;">
+    <figcaption>&#x2764;</figcaption>
+</figure>
+</div>
+<div class="foto-legenda">
+  <img src="IMG-20240319-WA0085.jpg" alt="foto24">
+  <p>E tb sou grato por cada vez que nossos olhares se cruzaram...</p>
+</div>
+<h3>Você é a razão pela qual eu sou feliiiz. Minha Princesa!!!<span>&#128081;</span></h3>
+<h2>Eu te amo mil milhões!<span style="font-size: 50px;">&#x2764;&#xFE0F;</span></h2>
+          <!-- Adicione mais divs .foto-legenda conforme necessário -->
+      </section>
+      
+    </section>
+    <section id="musicas" style="display:none;">
+      <h2>Bonus Místico.<span>&#127873;</span><span>&#10024;</span></h2>
+      <h3>-Acerte para ter acesso ao seu poder:</h3>
+      <label for="pergunta5">1. Por qual sobremesa você fez seu guardião gostar?</label><br>
+      <input type="musica" id="pergunta5" name="pergunta5"><br><br>
+      <label for="pergunta6">2. Oque você acha que é o bônus/poder?</label><br>
+      <input type="musica" id="pergunta6" name="pergunta6"><br><br>
+      <button onclick="verificarRespostasMusicas()">Verificar Respostas</button>
+      <p id="resultadoMusicas"></p>
+    </section>
+
+    <section id="musicas-especial" style="display:none;">
+      <h2>Canção Hipnotica!</h2>
+      <h3>A Elfa</h3>
+      <img src="" alt="Capa da música">
+      <audio id="background-musics" src="" autoplay controls loop></audio>
+    </section>
+    
+</section>
+    </section>
+  </main>
+  <footer id="footer">
+    <p>Uma Criação Magica de: O Guardião da Luz!&#128141;</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
